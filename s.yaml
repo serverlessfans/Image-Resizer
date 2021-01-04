@@ -1,0 +1,11 @@
+fun:
+  Component: fun
+  Provider: alibaba
+  Extends:
+    build:
+      - Hook: npm install --production
+        Path: ./src
+        Pre: true
+  Properties:
+    Region: ${Env(REGION)}
+    Config: s
