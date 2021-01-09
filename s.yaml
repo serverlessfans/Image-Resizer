@@ -2,7 +2,7 @@ fun:
   Component: fun
   Provider: alibaba
   Extends:
-    build:
+    package:
       - Hook: npm install --production
         Path: ./src
         Pre: true
